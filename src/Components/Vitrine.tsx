@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import "../Style/Vitrine.css"
+import { Button, Card, CardBody } from "@pegaseoff/pegase-ds"
 
 const Vitrine = () => {
   return (
@@ -14,13 +15,13 @@ const Vitrine = () => {
             Découvrez des chevaux d’exception sélectionnés pour leur beauté,
             leur puissance et leur élégance.
           </p>
-          <Link to="/" className="cta-btn">
-            Voir nos chevaux
+          <Link to="/products" className="cta-btn"><Button size="large" variant="warning">
+          Voir nos chevaux
+          </Button> 
           </Link>
         </div>
       </section>
-
-      {/* PRESENTATION */}
+      
       <section className="about">
         <h2>Notre Passion</h2>
         <p>
@@ -32,30 +33,26 @@ const Vitrine = () => {
 
       {/* AVANTAGES */}
       <section className="features">
-        <div className="feature-card">
+        <Card size="large">
+        <CardBody className="feature-card">
           <h3>🏇 Chevaux sélectionnés</h3>
           <p>Des races prestigieuses choisies pour leurs performances.</p>
-        </div>
-
-        <div className="feature-card">
+        </CardBody>
+        </Card>
+        <Card size="large">
+        <CardBody className="feature-card">
           <h3>🌍 Origines certifiées</h3>
           <p>Traçabilité et pedigree garantis.</p>
-        </div>
-
-        <div className="feature-card">
+        </CardBody>
+        </Card>
+        <Card size="large">
+        <CardBody className="feature-card">
           <h3>❤️ Bien-être prioritaire</h3>
           <p>Respect, soins et environnement adapté.</p>
-        </div>
-      </section>
+        </CardBody>
+        </Card>
 
-      {/* CTA FINAL */}
-      <section className="final-cta">
-        <h2>Prêt à trouver votre compagnon idéal ?</h2>
-        <Link to="/" className="cta-btn">
-          Explorer la collection
-        </Link>
       </section>
-
     </div>
   )
 }
