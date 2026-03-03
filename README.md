@@ -11,6 +11,8 @@ L'objectif de ce projet est de mettre en pratique un design system développé e
 
 Le thème choisi est l'**univers équestre** : le site permet de découvrir, louer ou acheter des chevaux de races variées (Mustang, Pur-sang, Frison, Arabe…), chacun présenté avec ses origines, sa race et une description.
 
+L'application est destinée à un publique en recherche d'une fidèle monture, aimant la nature et ses habitants.
+
 ---
 
 ## Stack technique

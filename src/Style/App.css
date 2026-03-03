@@ -5,11 +5,22 @@
   flex-direction: column;
 }
 
+.header-container {
+  margin-top: var(--spacing-large);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    width: 100%;
+    max-width: 50px;
+  }
+}
+
 .pgs-menu {
   display: flex!important;
   flex-direction: column;
   justify-content: center;
-  padding-top: var(--spacing-large);
 }
 
 .pgs-footer {

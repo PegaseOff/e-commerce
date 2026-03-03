@@ -29,21 +29,24 @@ const App = () => {
 
   return (
     <div className="container">
-      <Menu activeKey={active} onChange={(key: string) => navigate(keyToPath[key])}>
-        <MenuItem value="home">Accueil</MenuItem>
-        <MenuItem value="products">Produits</MenuItem>
-        <MenuItem value="join_us" disabled>Nous Rejoindre</MenuItem>
-        <MenuSeparator />
-        <MenuLabel>
-          Options
-        </MenuLabel>
-        <MenuItem value="about">
-          <Icon variant="secondary" icon={IoPeopleSharp} />
-        </MenuItem>
-        <MenuItem value="settings">
-          <Icon variant="secondary" icon={IoMdSettings} />
-        </MenuItem>
-      </Menu>
+      <div className="flex-row gap-lg header-container">
+        <img className="logo" src="./public/images/logo_bottes.png" alt="Logo" />
+        <Menu activeKey={active} onChange={(key: string) => navigate(keyToPath[key])}>
+          <MenuItem value="home">Accueil</MenuItem>
+          <MenuItem value="products">Produits</MenuItem>
+          <MenuItem value="join_us" disabled>Nous Rejoindre</MenuItem>
+          <MenuSeparator />
+          <MenuLabel>
+            Options
+          </MenuLabel>
+          <MenuItem value="about">
+            <Icon variant="secondary" icon={IoPeopleSharp} />
+          </MenuItem>
+          <MenuItem value="settings">
+            <Icon variant="secondary" icon={IoMdSettings} />
+          </MenuItem>
+        </Menu>
+      </div>
 
       <Routes>
         <Route path="/" element={<Vitrine />} />
