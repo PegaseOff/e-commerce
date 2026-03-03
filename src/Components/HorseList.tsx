@@ -1,16 +1,13 @@
 import HorseCard from "./HorseCard"
-import {type Horse} from "../types/Horse"
 import "../Style/HorseList.css"
+import horses from "../data/horses.json"
 
-interface HorseListProps {
-  horses: Horse[]
-}
-
-const HorseList = ({ horses }: HorseListProps) => {
+const HorseList = () => {
   return (
-    <div className="horse-list">
+    <div >
       <h1>🐎 Nos Chevaux</h1>
-      {horses.map((horse) => (
+      <div className="horse-list">
+        {horses.map((horse) => (
         <HorseCard
           key={horse.id}
           name={horse.name}
@@ -20,6 +17,7 @@ const HorseList = ({ horses }: HorseListProps) => {
           image={horse.image}
         />
       ))}
+      </div>
     </div>
   )
 }

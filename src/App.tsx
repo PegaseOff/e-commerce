@@ -1,30 +1,26 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import HorseList from "./Components/HorseList"
-import horsesData from "./data/horses.json"
-import {type Horse } from "./types/Horse"
 import "./Style/App.css"
-import { Menu, MenuItem, MenuLabel, MenuSeparator } from "@pegaseoff/pegase-ds"
-import { Routes, Route, Link } from "react-router-dom"
+import { Menu, MenuItem, MenuSeparator } from "@pegaseoff/pegase-ds"
+import { Routes, Route, Link } from "react-router-dom";
 
 const App = () => {
-  const [horses, setHorses] = useState<Horse[]>([])
   const [active, setActive] = useState('home');
-  useEffect(() => {
-    setHorses(horsesData as Horse[])
-  }, [])
 
   return (
     <div className="container">
       <Menu activeKey={active} onChange={setActive}>
         <MenuItem value="home">Accueil</MenuItem>
-        <Link to="/products"><MenuItem value="products"  >Produits</MenuItem></Link>
+        <Link to="/products" style={{ textDecoration: "none", color: "inherit" }}>
+          <MenuItem value="products">Produits</MenuItem>
+        </Link>
         <MenuSeparator />
         <MenuItem value="contact">Contact</MenuItem>
-        {/* <MenuLabel>Autres</MenuLabel> */}
         <MenuItem value="settings">Paramètres</MenuItem>
       </Menu>
       <Routes>
-        <Route path="/products" element={<HorseList horses={horses} />} />
+        <Route path="/" element={<h1>Bienvenue sur notre site de vente de chevaux !</h1>} />
+        <Route path="/products" element={<HorseList />} />
       </Routes>
     </div>
   )
