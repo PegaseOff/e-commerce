@@ -1,3 +1,15 @@
+h1{text-align:center;padding:40px;}
+.container {
+  width: 100%;
+
+}
+
+.pgs-menu {
+  display: flex!important;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: var(--spacing-large);
+}
 .horse-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(297px, 1fr));

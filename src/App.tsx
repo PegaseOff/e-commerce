@@ -17,7 +17,7 @@ const App = () => {
     <div className="container">
       <Menu activeKey={active} onChange={setActive}>
         <MenuItem value="home">Accueil</MenuItem>
-        <MenuItem value="products" to="/products">Produits</MenuItem>
+        <Link to="/products"><MenuItem value="products"  >Produits</MenuItem></Link>
         <MenuSeparator />
         <MenuItem value="contact">Contact</MenuItem>
         {/* <MenuLabel>Autres</MenuLabel> */}
@@ -25,7 +25,6 @@ const App = () => {
       </Menu>
       <Routes>
         <Route path="/products" element={<HorseList horses={horses} />} />
-        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   )
