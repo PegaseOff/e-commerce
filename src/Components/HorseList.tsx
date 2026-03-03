@@ -9,6 +9,7 @@ interface HorseListProps {
 const HorseList = ({ horses }: HorseListProps) => {
   return (
     <div className="horse-list">
+      <h1>🐎 Nos Chevaux</h1>
       {horses.map((horse) => (
         <HorseCard
           key={horse.id}
