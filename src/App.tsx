@@ -3,6 +3,7 @@ import HorseList from "./Components/HorseList"
 import "./Style/App.css"
 import { Menu, MenuItem, MenuSeparator } from "@pegaseoff/pegase-ds"
 import { Routes, Route, Link } from "react-router-dom";
+import Vitrine from "./Components/Vitrine";
 
 const App = () => {
   const [active, setActive] = useState('home');
@@ -10,17 +11,26 @@ const App = () => {
   return (
     <div className="container">
       <Menu activeKey={active} onChange={setActive}>
-        <MenuItem value="home">Accueil</MenuItem>
-        <Link to="/products" style={{ textDecoration: "none", color: "inherit" }}>
+        <Link to="/">
+          <MenuItem value="products">Accueil</MenuItem>
+        </Link>
+        <Link to="/products">
           <MenuItem value="products">Produits</MenuItem>
         </Link>
         <MenuSeparator />
-        <MenuItem value="contact">Contact</MenuItem>
-        <MenuItem value="settings">Paramètres</MenuItem>
+        <Link to="/about">
+          <MenuItem value="about">À propos</MenuItem>
+        </Link>
+        <Link to="/settings">
+          <MenuItem value="settings">Paramètres</MenuItem>
+        </Link>
       </Menu>
+
       <Routes>
-        <Route path="/" element={<h1>Bienvenue sur notre site de vente de chevaux !</h1>} />
+        <Route path="/" element={<Vitrine />} />
         <Route path="/products" element={<HorseList />} />
+        <Route path="/about" element={<h1>À propos</h1>} />
+        <Route path="/settings" element={<h1>Paramètres</h1>} />
       </Routes>
     </div>
   )
