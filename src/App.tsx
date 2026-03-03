@@ -12,7 +12,7 @@ const App = () => {
     <div className="container">
       <Menu activeKey={active} onChange={setActive}>
         <Link to="/">
-          <MenuItem value="products">Accueil</MenuItem>
+          <MenuItem value="home">Accueil</MenuItem>
         </Link>
         <Link to="/products">
           <MenuItem value="products">Produits</MenuItem>
