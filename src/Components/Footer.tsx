@@ -18,7 +18,7 @@ export const FooterComponent = () => {
             </FooterNavGroup>
           </FooterNav>
           <FooterSocial>
-            <FooterSocialItem href="https://github.com" label="GitHub">
+            <FooterSocialItem href="https://github.com/PegaseOff" label="GitHub">
               <Icon variant='secondary' icon={FaHorse} />
             </FooterSocialItem>
           </FooterSocial>
