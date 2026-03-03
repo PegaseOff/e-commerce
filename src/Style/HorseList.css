@@ -1,3 +1,8 @@
+h1 {
+  text-align:center;
+  padding:40px;
+}
+
 .horse-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(297px, 1fr));
@@ -9,13 +14,5 @@
     padding: 0 20px;
     display: flex;
     flex-wrap: wrap;
-    /* margin: 0 auto; */
     justify-content: center;
-}
-
-
-@media (max-width: 768px) {
-  .horse-list {
-    padding: unset;
-  }
 }
