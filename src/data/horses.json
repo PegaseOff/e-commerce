@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Spirit",
+    "breed": "Mustang",
+    "origin": "États-Unis",
+    "description": "Cheval sauvage, rapide et très endurant.",
+    "image": "./public/images/spirit.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Bella",
+    "breed": "Pur-sang",
+    "origin": "Angleterre",
+    "description": "Cheval élégant utilisé principalement pour les courses.",
+    "image": "./public/images/bella.webp"
+  },
+  {
+    "id": 3,
+    "name": "Thor",
+    "breed": "Frison",
+    "origin": "Pays-Bas",
+    "description": "Cheval noir puissant avec une grande crinière.",
+    "image": "/images/thor.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Luna",
+    "breed": "Arabe",
+    "origin": "Moyen-Orient",
+    "description": "Cheval rapide, intelligent et très résistant.",
+    "image": "/images/luna.jpg"
+  }
+]
