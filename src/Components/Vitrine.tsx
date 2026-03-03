@@ -3,7 +3,7 @@ import React from 'react'
 const Vitrine = () => {
   return (
     <div>
-      <h1>ℹ️ À propos</h1>
+      <h1>Welcome to my houuse</h1>
     </div>
   )
 }
