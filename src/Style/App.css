@@ -1,5 +1,8 @@
 .container {
   width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .pgs-menu {
@@ -7,4 +10,8 @@
   flex-direction: column;
   justify-content: center;
   padding-top: var(--spacing-large);
+}
+
+.pgs-footer {
+  margin-top: var(--spacing-large);
 }

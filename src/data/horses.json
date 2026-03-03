@@ -17,6 +17,22 @@
   },
   {
     "id": 3,
+    "name": "CK",
+    "breed": "Pur-sang",
+    "origin": "Angleterre",
+    "description": "Cheval élégant utilisé principalement pour les courses.",
+    "image": "./public/images/groscheval.png"
+  },
+  {
+    "id": 4,
+    "name": "Pedro",
+    "breed": "Pur-sang",
+    "origin": "Angleterre",
+    "description": "Cheval élégant utilisé principalement pour les courses.",
+    "image": "./public/images/grocheval.png"
+  },
+  {
+    "id": 5,
     "name": "Thor",
     "breed": "Frison",
     "origin": "Pays-Bas",
@@ -24,7 +40,7 @@
     "image": "/images/thor.jpg"
   },
   {
-    "id": 4,
+    "id": 6,
     "name": "Luna",
     "breed": "Arabe",
     "origin": "Moyen-Orient",
@@ -32,7 +48,7 @@
     "image": "/images/luna.jpg"
   },
 {
-  "id": 5,
+  "id": 7,
   "name": "Shadow",
   "breed": "Frison",
   "origin": "Pays-Bas",
@@ -40,7 +56,7 @@
   "image": "/images/shadow.jpg"
 },
 {
-  "id": 6,
+  "id": 8,
   "name": "Sahara",
   "breed": "Arabe",
   "origin": "Moyen-Orient",
