@@ -30,5 +30,21 @@
     "origin": "Moyen-Orient",
     "description": "Cheval rapide, intelligent et très résistant.",
     "image": "/images/luna.jpg"
-  }
+  },
+{
+  "id": 5,
+  "name": "Shadow",
+  "breed": "Frison",
+  "origin": "Pays-Bas",
+  "description": "Cheval noir puissant avec une longue crinière ondulée. Très utilisé pour le dressage et les spectacles grâce à son allure élégante.",
+  "image": "/images/shadow.jpg"
+},
+{
+  "id": 6,
+  "name": "Sahara",
+  "breed": "Arabe",
+  "origin": "Moyen-Orient",
+  "description": "Cheval rapide et très endurant, reconnu pour sa résistance dans les climats désertiques et son intelligence remarquable.",
+  "image": "/images/sahara.jpg"
+}
 ]

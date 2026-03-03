@@ -1,4 +1,13 @@
 /* .body{ background-color: #7c7470;} */
+h1{text-align:center;padding:40px;}
 .container {
   width: 100%;
+
+}
+
+.pgs-menu {
+  display: flex!important;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: var(--spacing-large);
 }
